@@ -7,6 +7,7 @@ html {
   -webkit-box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: $text-color;
+  background-color: #fdfcf8;
 }
 
 img {
@@ -47,16 +48,20 @@ a {
   box-shadow: 0.5px 0.5px 0.5rem rgba(0, 0, 0, 0.5);
   margin: 0 2rem;
   color: $text-color;
-  transition: all .25s;
-  &:hover{
-    opacity: .8;
+  transition: all 0.25s;
+  &:hover {
+    color: $primary-color;
   }
 }
 
 .btn-primary {
   background: linear-gradient(to top, #ffcf82 0%, #fdea8b 100%);
   border: none;
-  
+  transition: all 0.25s;
+  &:hover {
+    color: $text-color;
+    background: linear-gradient(260deg, #ffcf82 0%, #fdea8b 100%);
+  }
 }
 
 .header {
@@ -112,5 +117,36 @@ a {
   &_descript {
     font-size: 2rem;
     padding-bottom: 3.5rem;
+  }
+}
+
+.middle {
+  background: rgb(253, 252, 248);
+  background: linear-gradient(
+    184deg,
+    rgba(253, 252, 248, 1) 0%,
+    rgba(254, 246, 247, 1) 100%
+  );
+  &_inner {
+    padding: 14rem 0;
+    @include flex(center, space-between);
+  }
+  &_box {
+    padding: 2rem;
+    border-radius: 10%;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+    &-title {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    &-link {
+      font-size: 1.5rem;
+      @include flex(center, flex-start);
+      & a {
+        padding-right: 1rem;
+      }
+    }
   }
 }

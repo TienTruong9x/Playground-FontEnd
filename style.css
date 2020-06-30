@@ -4,6 +4,7 @@ html {
   -webkit-box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: #1a2b5f;
+  background-color: #fdfcf8;
 }
 
 img {
@@ -42,12 +43,17 @@ a {
   transition: all 0.25s;
 }
 .btn:hover {
-  opacity: 0.8;
+  color: #ffc87a;
 }
 
 .btn-primary {
   background: linear-gradient(to top, #ffcf82 0%, #fdea8b 100%);
   border: none;
+  transition: all 0.25s;
+}
+.btn-primary:hover {
+  color: #1a2b5f;
+  background: linear-gradient(260deg, #ffcf82 0%, #fdea8b 100%);
 }
 
 .header {
@@ -109,11 +115,38 @@ a {
   font-size: 2rem;
   padding-bottom: 3.5rem;
 }
-.banner_action {
+
+.middle {
+  background: #fdfcf8;
+  background: linear-gradient(184deg, #fdfcf8 0%, #fef6f7 100%);
+}
+.middle_inner {
+  padding: 14rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: none;
+}
+.middle_box {
+  padding: 2rem;
+  border-radius: 10%;
+  box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+}
+.middle_box-title {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.middle_box-link {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: none;
+}
+.middle_box-link a {
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
