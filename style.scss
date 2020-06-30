@@ -49,6 +49,7 @@ a {
   margin: 0 2rem;
   color: $text-color;
   transition: all 0.25s;
+  display: inline-block;
   &:hover {
     color: $primary-color;
   }
@@ -147,6 +148,108 @@ a {
       & a {
         padding-right: 1rem;
       }
+    }
+  }
+}
+
+.feature {
+  padding-top: 4rem;
+  &_item {
+    @include flex(center);
+    margin-bottom: 15rem;
+    &:nth-child(odd) {
+      .feature_info {
+        padding-left: 10rem;
+      }
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      .feature_info {
+        padding-right: 10rem;
+      }
+    }
+  }
+  &_image,
+  &_info {
+    width: 50%;
+  }
+  &_title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+  }
+  &_descript {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    line-height: 1.8rem;
+  }
+  &_intro {
+    &-list {
+      margin-bottom: 3rem;
+    }
+    &-item {
+      font-weight: 600;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      text-decoration: underline;
+      &--circle {
+        text-decoration: none;
+        position: relative;
+        padding-left: 5rem;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(0, -50%);
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+          background-color: #f0f;
+        }
+        &:nth-child(2)::before {
+          background-color: #8bea3c;
+        }
+        &:nth-child(3)::before {
+          background-color: #42c0f4;
+        }
+      }
+    }
+  }
+  &_best {
+    &-list {
+      @include flex(flex-start, space-between, wrap);
+    }
+    &-icon {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 4px;
+      font-size: 2rem;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      color: #ff00d4;
+      position: relative;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: currentColor;
+        position: absolute;
+        opacity: 0.2;
+        border-radius: 4px;
+      }
+    }
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 2rem;
+      padding: 1rem 0;
+    }
+    &-item {
+      width: calc(50% - 3rem);
+      margin-bottom: 3rem;
     }
   }
 }
