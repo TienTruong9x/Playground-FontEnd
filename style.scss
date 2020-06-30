@@ -113,7 +113,4 @@ a {
     font-size: 2rem;
     padding-bottom: 3.5rem;
   }
-  &_action{
-    @include flex(center, center)
-  }
 }
