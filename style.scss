@@ -34,6 +34,31 @@ a {
   margin: 0 auto;
 }
 
+.btn {
+  appearance: none;
+  border: 1px solid;
+  border-radius: 3rem;
+  padding: 1.8rem 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  box-shadow: 0.5px 0.5px 0.5rem rgba(0, 0, 0, 0.5);
+  margin: 0 2rem;
+  color: $text-color;
+  transition: all .25s;
+  &:hover{
+    opacity: .8;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(to top, #ffcf82 0%, #fdea8b 100%);
+  border: none;
+  
+}
+
 .header {
   padding-top: 4rem;
   &_inner {
@@ -69,5 +94,26 @@ a {
   font-weight: 600;
   &_text {
     color: $primary-color;
+  }
+}
+
+.banner {
+  padding-top: 14rem;
+  &_inner {
+    text-align: center;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  &_title {
+    font-size: 7rem;
+    font-weight: bold;
+    padding-bottom: 3.5rem;
+  }
+  &_descript {
+    font-size: 2rem;
+    padding-bottom: 3.5rem;
+  }
+  &_action{
+    @include flex(center, center)
   }
 }

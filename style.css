@@ -26,6 +26,30 @@ a {
   margin: 0 auto;
 }
 
+.btn {
+  appearance: none;
+  border: 1px solid;
+  border-radius: 3rem;
+  padding: 1.8rem 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  box-shadow: 0.5px 0.5px 0.5rem rgba(0, 0, 0, 0.5);
+  margin: 0 2rem;
+  color: #1a2b5f;
+  transition: all 0.25s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: linear-gradient(to top, #ffcf82 0%, #fdea8b 100%);
+  border: none;
+}
+
 .header {
   padding-top: 4rem;
 }
@@ -66,6 +90,30 @@ a {
 }
 .logo_text {
   color: #ffc87a;
+}
+
+.banner {
+  padding-top: 14rem;
+}
+.banner_inner {
+  text-align: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.banner_title {
+  font-size: 7rem;
+  font-weight: bold;
+  padding-bottom: 3.5rem;
+}
+.banner_descript {
+  font-size: 2rem;
+  padding-bottom: 3.5rem;
+}
+.banner_action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: none;
 }
 
 /*# sourceMappingURL=style.css.map */
