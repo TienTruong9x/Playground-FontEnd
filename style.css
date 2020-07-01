@@ -251,4 +251,127 @@ a {
   margin-bottom: 3rem;
 }
 
+.partner {
+  text-align: center;
+}
+.partner_inner {
+  max-width: 75rem;
+}
+.partner_title {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 7rem;
+  border-bottom: 2px solid;
+}
+.partner_list {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: none;
+}
+
+.contact {
+  padding-top: 15rem;
+}
+.contact_title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.contact_with {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.contact_with-ground {
+  color: #ffc87a;
+}
+.contact_list {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: none;
+}
+.contact_subcriber {
+  margin-top: 15rem;
+  border-bottom: 2px solid;
+  padding-bottom: 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: none;
+}
+.contact_subcriber-descript {
+  width: 50%;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-right: 3rem;
+}
+.contact_subcriber_form {
+  width: 50%;
+  border-radius: 4px;
+}
+.contact_subcriber_form-email {
+  padding: 2rem 2rem;
+  background-color: #F2F1F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact_subcriber_form-input {
+  font-family: "Poppins";
+  border: 0;
+  outline: none;
+  background: none;
+  flex-grow: 1;
+  padding-right: 1rem;
+}
+.contact_subcriber_form-button {
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact_subcriber_form-social {
+  margin-top: 3rem;
+}
+.contact_subcriber_form-social i {
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
+.footer {
+  padding: 5rem 0;
+}
+.footer_start {
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: none;
+}
+.footer_start-item {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  padding: 0.5rem 0;
+}
+.footer_end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: none;
+  padding-top: 2rem;
+  font-size: 1.4rem;
+  border-top: 1px solid #BBB;
+}
+.footer_end a {
+  padding: 0 2rem 0 0;
+}
+
 /*# sourceMappingURL=style.css.map */
