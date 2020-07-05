@@ -358,7 +358,13 @@ a {
     }
   }
 }
-
+.header {
+  &_menu{
+    &-mobile{
+      display: none;
+    }
+  }
+}
 //tablet
 @media screen and (max-width: 768px) {
   .middle {
@@ -398,6 +404,9 @@ a {
   .header {
     &_menu {
       display: none;
+      &-mobile{
+        display: block;
+      }
     }
     &_menu{
       &-open{
@@ -419,7 +428,7 @@ a {
         top: 0;
         bottom: 0;
         right: 0;
-        background-color:#FEF6F8;
+        background-color:#FDFCF8;
         opacity: .9;
         width: 40%;
         transform: translateX(100%);

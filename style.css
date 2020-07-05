@@ -374,6 +374,10 @@ a {
   padding: 0 2rem 0 0;
 }
 
+.header_menu-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .middle_inner {
     padding: 8rem 2rem;
@@ -408,6 +412,9 @@ a {
   .header_menu {
     display: none;
   }
+  .header_menu-mobile {
+    display: block;
+  }
   .header_menu-open {
     font-size: 2rem;
     cursor: pointer;
@@ -427,7 +434,7 @@ a {
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: #FEF6F8;
+    background-color: #FDFCF8;
     opacity: 0.9;
     width: 40%;
     transform: translateX(100%);
