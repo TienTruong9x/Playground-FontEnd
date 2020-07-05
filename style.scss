@@ -399,7 +399,58 @@ a {
     &_menu {
       display: none;
     }
+    &_menu{
+      &-open{
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      &-close{
+        margin-top: 4rem;
+        text-align: right;
+        border-bottom: #CCC 1px dashed;
+        padding: 0rem 1rem 1rem 0;
+      }
+      &-btn-close{
+        font-size: 3rem;
+        cursor: pointer;
+      }
+      &-main{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color:#FEF6F8;
+        opacity: .9;
+        width: 40%;
+        transform: translateX(100%);
+        transition: all 0.5s;
+      }
+      &-list{
+        display: block;
+      }
+      &-item{
+        font-size: 1.6rem;
+        width: 60%;
+        margin: 0 auto;
+        padding: 1.2rem;
+        @include flex(center,space-evenly);
+        transition: all .25s;
+        &:last-child{
+          margin-left: auto;
+        }
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+    #open:checked ~ .header_menu-main{
+      transform: translateX(0%);
+    }
+    #open:checked ~ .header_menu-open{
+      display: none;
+    }
   }
+
   .banner {
     padding-top: 8rem;
     &_title {
